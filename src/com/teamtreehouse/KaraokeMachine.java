@@ -62,7 +62,14 @@ public class KaraokeMachine {
             String singerName = promptForSingerName();
             String artist = promptArtist();
             Song artistSong = promptSongForArtist(artist);
-            mSongQueue.add(new SongRequest(singerName, artistSong));
+            SongRequest songRequest = new SongRequest(singerName, artistSong);
+            if (mSongQueue.contains(songRequest)) {
+              System.out.printf("%n%n Whoops %s already requested %s!",
+                      singerName,
+                      songRequest);
+              break;
+            }
+            mSongQueue.add(songRequest);
             System.out.printf("You chose:  %s %n", artistSong);
             break;
           case "play":
@@ -83,7 +90,7 @@ public class KaraokeMachine {
   }
 
   private String promptForSingerName() throws IOException {
-    System.out.print("Enter the singer name:  ");
+    System.out.printf("Enter the singer name:  ");
     return mReader.readLine();
   }
 

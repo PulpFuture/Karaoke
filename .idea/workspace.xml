@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7a45bfcb-64f2-449e-86ca-a4f6b8e33be2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/com/teamtreehouse/KaraokeMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/teamtreehouse/KaraokeMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/teamtreehouse/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/teamtreehouse/model/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/teamtreehouse/model/SongRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/teamtreehouse/model/SongRequest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/teamtreehouse/KaraokeMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+            <state relative-caret-position="-757">
+              <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,7 +101,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565988529847" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565988992302" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -223,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/teamtreehouse/KaraokeMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        <state relative-caret-position="-757">
+          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
