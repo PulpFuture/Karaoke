@@ -1,5 +1,7 @@
 package com.teamtreehouse.model;
 
+import java.util.Objects;
+
 public class Song {
   protected String mArtist;
   protected String mTitle;
@@ -22,8 +24,22 @@ public class Song {
   public String getVideoUrl() {
     return mVideoUrl;
   }
-  
-  
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Song song = (Song) o;
+    return Objects.equals(mArtist, song.mArtist) &&
+            Objects.equals(mTitle, song.mTitle) &&
+            Objects.equals(mVideoUrl, song.mVideoUrl);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(mArtist, mTitle, mVideoUrl);
+  }
+
   @Override
   public String toString() {
     return String.format("Song:  %s by %s", mTitle, mArtist);
