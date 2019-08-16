@@ -31,14 +31,18 @@ public class SongRequest {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         SongRequest that = (SongRequest) o;
-        return mSingerName.equals(that.mSingerName) &&
-                mSong.equals(that.mSong);
+
+        if (!mSingerName.equals(that.mSingerName)) return false;
+        return mSong.equals(that.mSong);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(mSingerName, mSong);
+        int result = mSingerName.hashCode();
+        result = 31 * result + mSong.hashCode();
+        return result;
     }
 
     @Override

@@ -6,10 +6,10 @@ public class Karaoke {
   
   public static void main(String[] args) {
     SongBook songBook = new SongBook();
-    songBook.importFrom("songs.txt");
+    songBook.importFrom("C:\\Workspace\\Karaoke\\src\\songs.txt");
     KaraokeMachine machine = new KaraokeMachine(songBook);
     machine.run();
     System.out.println("Saving book....");
-    songBook.exportTo("songs.txt");
+    songBook.exportTo("C:\\Workspace\\Karaoke\\src\\songs.txt");
   }
 }

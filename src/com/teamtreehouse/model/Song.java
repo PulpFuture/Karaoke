@@ -29,15 +29,20 @@ public class Song {
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
+
     Song song = (Song) o;
-    return Objects.equals(mArtist, song.mArtist) &&
-            Objects.equals(mTitle, song.mTitle) &&
-            Objects.equals(mVideoUrl, song.mVideoUrl);
+
+    if (mArtist != null ? !mArtist.equals(song.mArtist) : song.mArtist != null) return false;
+    if (mTitle != null ? !mTitle.equals(song.mTitle) : song.mTitle != null) return false;
+    return mVideoUrl != null ? mVideoUrl.equals(song.mVideoUrl) : song.mVideoUrl == null;
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(mArtist, mTitle, mVideoUrl);
+    int result = mArtist != null ? mArtist.hashCode() : 0;
+    result = 31 * result + (mTitle != null ? mTitle.hashCode() : 0);
+    result = 31 * result + (mVideoUrl != null ? mVideoUrl.hashCode() : 0);
+    return result;
   }
 
   @Override
